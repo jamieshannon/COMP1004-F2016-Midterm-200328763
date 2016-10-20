@@ -44,6 +44,10 @@ namespace COMP1004_F2016_Midterm_200328763
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            Character character = Program.character;
+
+            character.Race = this._selectedRace;
+
             FinalForm finalForm = new FinalForm();
             finalForm.previousForm = this;
 

@@ -17,6 +17,11 @@ namespace COMP1004_F2016_Midterm_200328763
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Loads the next form and hides this form after the timer finishes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
             //hide the splash form

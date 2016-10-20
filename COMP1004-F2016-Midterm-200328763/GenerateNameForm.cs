@@ -40,20 +40,37 @@ namespace COMP1004_F2016_Midterm_200328763
             LastNameTextBox.Text = LastNameListBox.SelectedItem.ToString();
         }
 
+        /// <summary>
+        /// Call the GenerateName method when the form is loaded
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GenerateNameForm_Load(object sender, EventArgs e)
         {
             GenerateNames();
         }
 
+        /// <summary>
+        /// Call the GenerateNames method when the generate button is clicked
+        /// and assign the names to the character object
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GenerateButton_Click(object sender, EventArgs e)
         {
             GenerateNames();
 
+            // Set the names in the character object
             Character character = Program.character;
             character.FirstName = FirstNameTextBox.Text;
             character.LastName = LastNameTextBox.Text;
         }
 
+        /// <summary>
+        /// Open the next form when the next button is clicked and hide this form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             //Instantiate a new abilityGeneratorForm object
