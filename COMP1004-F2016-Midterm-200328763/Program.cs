@@ -19,7 +19,7 @@ namespace COMP1004_F2016_Midterm_200328763
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AbilityGeneratorForm());
+            Application.Run(new SplashForm());
         }
     }
 }

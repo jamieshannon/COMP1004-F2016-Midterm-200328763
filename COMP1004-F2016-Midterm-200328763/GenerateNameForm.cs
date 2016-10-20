@@ -12,6 +12,7 @@ namespace COMP1004_F2016_Midterm_200328763
 {
     public partial class GenerateNameForm : Form
     {
+        public SplashForm previousForm;
         public GenerateNameForm()
         {
             InitializeComponent();
