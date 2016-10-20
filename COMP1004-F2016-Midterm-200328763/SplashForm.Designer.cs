@@ -42,6 +42,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::COMP1004_F2016_Midterm_200328763.Properties.Resources.splashSceen;
             this.ClientSize = new System.Drawing.Size(600, 320);
             this.ControlBox = false;

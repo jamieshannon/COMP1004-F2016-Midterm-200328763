@@ -56,8 +56,10 @@
             this.FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.RaceLabel = new System.Windows.Forms.Label();
             this.RaceTextBox = new System.Windows.Forms.TextBox();
+            this.FinalFormPictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.AbilityGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalFormPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -332,6 +334,15 @@
             this.RaceTextBox.Size = new System.Drawing.Size(152, 26);
             this.RaceTextBox.TabIndex = 12;
             // 
+            // FinalFormPictureBox
+            // 
+            this.FinalFormPictureBox.Location = new System.Drawing.Point(168, 220);
+            this.FinalFormPictureBox.Name = "FinalFormPictureBox";
+            this.FinalFormPictureBox.Size = new System.Drawing.Size(152, 203);
+            this.FinalFormPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.FinalFormPictureBox.TabIndex = 14;
+            this.FinalFormPictureBox.TabStop = false;
+            // 
             // FinalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,6 +350,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(531, 507);
             this.ControlBox = false;
+            this.Controls.Add(this.FinalFormPictureBox);
             this.Controls.Add(this.RaceLabel);
             this.Controls.Add(this.RaceTextBox);
             this.Controls.Add(this.LastNameLabel2);
@@ -359,6 +371,7 @@
             this.menuStrip1.PerformLayout();
             this.AbilityGroupBox.ResumeLayout(false);
             this.AbilityGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalFormPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,5 +407,6 @@
         private System.Windows.Forms.TextBox FirstNameTextBox;
         private System.Windows.Forms.Label RaceLabel;
         private System.Windows.Forms.TextBox RaceTextBox;
+        private System.Windows.Forms.PictureBox FinalFormPictureBox;
     }
 }

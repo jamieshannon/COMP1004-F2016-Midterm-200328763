@@ -75,6 +75,10 @@ namespace COMP1004_F2016_Midterm_200328763
 
             GenerateAbilities();
 
+            // Set the swap ability list boxes to default to the first option
+            SwapAbilityListBox1.SelectedItem = SwapAbilityListBox1.Items[0];          
+            SwapAbilityListBox2.SelectedItem = SwapAbilityListBox2.Items[0];
+
         }
 
 

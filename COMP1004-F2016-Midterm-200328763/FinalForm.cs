@@ -58,6 +58,24 @@ namespace COMP1004_F2016_Midterm_200328763
             FirstNameTextBox.Text = character.FirstName;
             LastNameTextBox.Text = character.LastName;
             RaceTextBox.Text = character.Race;
+
+            //Check which race is selected and display the appropriate image
+            if (character.Race == "Human")
+            {
+                FinalFormPictureBox.Image = Properties.Resources.Human_Male;
+            }
+            else if (character.Race == "Elf")
+            {
+                FinalFormPictureBox.Image = Properties.Resources.Elf_Male;
+            }
+            else if (character.Race == "Dwarf")
+            {
+                FinalFormPictureBox.Image = Properties.Resources.Dwarf_Male;
+            }
+            else if (character.Race == "Halfling")
+            {
+                FinalFormPictureBox.Image = Properties.Resources.Halfling_Male;
+            }
         }
     }
 }

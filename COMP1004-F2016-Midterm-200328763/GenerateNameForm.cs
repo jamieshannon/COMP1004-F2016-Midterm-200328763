@@ -61,6 +61,14 @@ namespace COMP1004_F2016_Midterm_200328763
             GenerateNames();
 
             // Set the names in the character object
+            SetNames();
+        }
+
+        /// <summary>
+        /// Sets the names in the character object
+        /// </summary>
+        private void SetNames()
+        {
             Character character = Program.character;
             character.FirstName = FirstNameTextBox.Text;
             character.LastName = LastNameTextBox.Text;
@@ -73,6 +81,10 @@ namespace COMP1004_F2016_Midterm_200328763
         /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
+            //Ensure that names are set for the character object even if the generate
+            //button is not clicked
+
+            SetNames();
             //Instantiate a new abilityGeneratorForm object
             AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
             //hide this form
