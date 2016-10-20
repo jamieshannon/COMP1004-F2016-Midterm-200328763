@@ -20,5 +20,9 @@ namespace COMP1004_F2016_Midterm_200328763
         public string Charisma { get; set; }
 
         public string Race { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
     }
 }
